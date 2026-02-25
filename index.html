@@ -848,49 +848,49 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-7">
                         <div class="footer-logo mb-4">
-                            <a href="#banner"><img loading="lazy" src="logo.svg" alt=""></a>
+                            <img loading="lazy" src="logo.svg" alt="logo">
                         </div>
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="footer-socials__wrap">
-                                    <h4 class="fw-medium">Наши соц сети</h4>
+                                    <div class="footer-subtxt fw-medium">Наши соц сети</div>
                                     <div class="w-100">
                                         <div class="_line"></div>
                                     </div>
                                     <div class="footer-socials d-flex gap-4">
-                                        <a href="https://instagram.com/pallet" 
+                                        <a href="https://instagram.com/your-instagram" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
                                             class="footer-socials__link"
-                                            role="listitem"
-                                            aria-label="Instagram ООО Паллет (откроется в новой вкладке)">
+                                            aria-label="Instagram ООО Паллет"
+                                            title="Instagram">
                                             <i class="icon icon-instagram" aria-hidden="true"></i>
                                         </a>
-                                        
-                                        <a href="https://t.me/pallet" 
+
+                                        <a href="https://t.me/your-telegram" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
                                             class="footer-socials__link"
-                                            role="listitem"
-                                            aria-label="Telegram ООО Паллет (откроется в новой вкладке)">
+                                            aria-label="Telegram ООО Паллет"
+                                            title="Telegram">
                                             <i class="icon icon-tg" aria-hidden="true"></i>
                                         </a>
-                                        
-                                        <a href="https://vk.com/pallet" 
+
+                                        <a href="https://vk.com/your-vkontakte" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
                                             class="footer-socials__link"
-                                            role="listitem"
-                                            aria-label="ВКонтакте ООО Паллет (откроется в новой вкладке)">
+                                            aria-label="ВКонтакте ООО Паллет"
+                                            title="ВКонтакте">
                                             <i class="icon icon-vk" aria-hidden="true"></i>
                                         </a>
-                                        
-                                        <a href="https://wa.me/79157633815" 
+
+                                        <a href="https://wa.me/your-whatsapp" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
                                             class="footer-socials__link"
-                                            role="listitem"
-                                            aria-label="Написать в WhatsApp ООО Паллет (откроется в новой вкладке)">
+                                            aria-label="WhatsApp ООО Паллет"
+                                            title="WhatsApp">
                                             <i class="icon icon-ws" aria-hidden="true"></i>
                                         </a>
                                     </div>
@@ -898,7 +898,7 @@
                             </div>
                             <div class="col-sm-4 col-6">
                                 <div class="footer-nav">
-                                    <h4 class="fw-medium">Сайт</h4>
+                                    <div class="footer-subtxt fw-medium">Сайт</div>
                                     <div class="w-100">
                                         <div class="_line"></div>
                                     </div>
@@ -913,7 +913,7 @@
                             </div>
                             <div class="col-sm-4 col-6">
                                 <div class="footer-contact">
-                                    <h4 class="fw-medium">Контакты</h4>
+                                    <div class="footer-subtxt fw-medium">Контакты</div>
                                     <div class="w-100">
                                         <div class="_line"></div>
                                     </div>
@@ -928,10 +928,12 @@
                     <div class="col-xl-6 col-lg-5">
                         <iframe 
                             class="footer-map w-100 h-100 _rounded-1 js-lazy-iframe"
+                            title="карта"
                             data-src="https://yandex.com/map-widget/v1/?ll=37.664449%2C55.754369&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5NBIa0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAiCg2GeBZCFQEGX0I%2C&z=11.94"
-                            frameborder="1"
-                            allowfullscreen="true"
-                            style="position:relative;"
+                            allowfullscreen
+                            webkitallowfullscreen 
+                            mozallowfullscreen
+                            style="border:0; position:relative;"
                         ></iframe>
                     </div>
                 </div>
@@ -940,24 +942,23 @@
     </div>
 
     <!-- Заказать подон -->
-    <div class="modal fade" id="_myModal_product" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="_myModal_product" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content _rounded-1">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-product__wrap">
                     <div class="row">
                         <div class="col-12 mb-3">
-                            <h2>Оформление заказа</h2>
+                            <h2 id="productModalLabel">Оформление заказа</h2>
                         </div>
                         <div class="col-lg-5">
-                            <img src="" 
+                            <img src="img/products/pr-1.webp" 
                                 alt="Деревянный поддон" 
                                 class="modal-product__image"
                                 data-field="modalImage">
                             
-                            <h3 data-field="title"></h3>
+                            <h3 data-field="title">Загрузка...</h3>
                             <ul data-field="modalDetails" class="modal-product__details"></ul>
-
                         </div>
                         <div class="col-lg-7">
                             <div class="_h3 mb-4">Контактная информация</div>
@@ -1023,45 +1024,41 @@
     </div>
 
     <!-- Заказать звонок -->
-    <div id="_myModal_main" class="modal fade" tabindex="-1" aria-labelledby="mainModalLabel" aria-hidden="true">
+    <div id="_myModal_main" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mainModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content _rounded-1 overflow-hidden">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body p-0">
-                    <div class="modal-form__wrap">
-                        <div class="modal-form__item">
-                            <h2 class="mb-4" id="mainModalLabel">Заказать звонок</h2>
-                            <form class="_form needs-validation" novalidate>
-                                <div class="row gy-4">
-                                    <div class="col-12">
-                                        <input type="text" class="form-control" name="name" placeholder="Имя">
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="tel" class="form-control _phone-mask" name="tel" placeholder="+7 (___) ___-__-__" required>
-                                        <div class="invalid-feedback">
-                                            Поле обязательно для заполнения (Введите полный номер телефона).
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea class="form-control" name="message" placeholder="Сообщение"></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn _btn-primary w-100 mb-2">Отправить</button>
-                                        <label class="form-check mt-2 mb-0 align-items-start d-flex gap-2">
-                                            <input class="form-check-input flex-shrink-0" type="checkbox" value="" name="agree" checked required>
-                                            <span class="form-check-label">
-                                                Согласен(на) с обработкой персональных данных
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </form>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body p-0">
+                <div class="modal-form__wrap">
+                <div class="modal-form__item">
+                    <h2 class="mb-4" id="mainModalLabel">Заказать звонок</h2>
+                    <form class="_form needs-validation" novalidate>
+                    <div class="row gy-4">
+                        <div class="col-12">
+                        <input type="text" class="form-control" name="name" placeholder="Имя">
                         </div>
-                        <div class="modal-form__bg d-none d-sm-block">
-                            <img loading="lazy" class="_bg-cover" src="img/company-2.webp" alt="bg">
+                        <div class="col-12">
+                        <input type="tel" class="form-control _phone-mask" name="tel" placeholder="+7 (___) ___-__-__" required>
+                        <div class="invalid-feedback"> Поле обязательно для заполнения (Введите полный номер телефона). </div>
+                        </div>
+                        <div class="col-12">
+                        <textarea class="form-control" name="message" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="col-12">
+                        <button type="submit" class="btn _btn-primary w-100 mb-2">Отправить</button>
+                        <label class="form-check mt-2 mb-0 align-items-start d-flex gap-2">
+                            <input class="form-check-input flex-shrink-0" type="checkbox" value="" name="agree" checked required>
+                            <span class="form-check-label"> Согласен(на) с обработкой персональных данных </span>
+                        </label>
                         </div>
                     </div>
+                    </form>
                 </div>
+                <div class="modal-form__bg d-none d-sm-block">
+                    <img loading="lazy" class="_bg-cover" src="img/company-2.webp" alt="bg">
+                </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
