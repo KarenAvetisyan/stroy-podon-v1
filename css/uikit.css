@@ -554,7 +554,7 @@ img{
   --fancybox-backdrop-bg: rgb(255 255 255 / 95%);
 }
 .f-caption{
-  color: #000!important;
+  color: #fff!important;
   font-weight: 500;
 }
 input.form-control{
@@ -650,4 +650,5 @@ textarea.form-control:focus{
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+
 }
