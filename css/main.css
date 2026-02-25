@@ -405,24 +405,20 @@
 .footer-socials a:last-child {
   margin-right: 0;
 }
-.footer h4 {
-  font-weight: 400;
+.footer-subtxt {
   font-size: 16px;
-  color: #292827;
 }
 .footer ._line {
   margin: 14px 0;
 }
 .footer-nav__list{
   font-size: 14px;
-  color: #676770;
   padding-left: 0;
   list-style: none;
   line-height: 180%;
 }
 .footer-contact {
   font-size: 14px;
-  color: #676770;
 }
 .footer-contact p i,
 .footer-contact p img{
