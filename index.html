@@ -19,25 +19,17 @@
     <!-- Preconnect для внешних ресурсов -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     
-    <!-- Критические шрифты с display=swap -->
-    <link rel="preload" href="font/Onest-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="font/Onest-Bold.woff2" as="font" type="font/woff2" crossorigin>
-    
-    <!-- Некритические CSS асинхронно -->
-    <link rel="preload" href="css/libs/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/libs/bootstrap.min.css"></noscript>
-    
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Fancybox -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"></noscript>
-    
+
+    <!-- Icons (если они не критичны для первого рендера, иначе оставляем среди критических) -->
     <link rel="preload" href="css/icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="css/icons.css"></noscript>
-    
-    <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/main.css"></noscript>
-    
-    <link rel="preload" href="css/uikit.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/uikit.css"></noscript>
 
 </head>
 <body>
