@@ -318,7 +318,6 @@ img{
   flex-shrink: 0;
   font-size: 18px;
   font-weight: 500;
-  color: var(--primary);
 }
 ._product-info__details-btn {
   display: flex;
